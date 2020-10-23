@@ -40,8 +40,9 @@ jobs:
         chmod 777 build/usr/uploads/
         tree -d build
         tar -cvvzf build.tar.gz build/
+        tree .
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
           name: typecho_build
-          path: build.tar.gz
+          path: ./build.tar.gz
