@@ -7,7 +7,7 @@ DIR=../
 update:
 	@echo 'git update'
 	rm -Rf build/
-	git clone --depth=1 https://github.com/typecho/typecho.git build
+	git clone --depth=1 -b patch-1 https://github.com/RainshawGao/typecho.git build
 	rm -Rf build/.git
 	rm -Rf build/.github
 	rm -f build/.gitignore
